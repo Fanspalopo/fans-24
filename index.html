@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <link rel="stylesheet" href="style.CSS">
+</head>
+<body>
+    <BR><BR> <header>
+        
+        <nav>
+            <ul>
+                
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#complaint">Pengaduan</a></li>
+                <li><a href="#social-media">Sosial Media</a></li>
+               
+            </ul>
+        </nav>
+    </header><br><BR>
+
+
+    <section id="home">
+        <h1>HAI KENALAN YUK!</h1>
+        <p>Hai kami merupakan FANS Palopo Atau Forum Anak Kota Palopo</p>
+    </section><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR>
+
+        <BR><BR> <header>
+        
+            <nav>
+                <ul>
+                    
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#complaint">Pengaduan</a></li>
+                    <li><a href="#social-media">Sosial Media</a></li>
+                   
+                </ul>
+            </nav>
+        </header><br>
+
+
+    <section id="about">
+        <h1>APASIH OSCEA ITU?</h1>
+        <p>Ini adalah bagian pengenalan materi.</p>
+    </section>
+
+
+    <BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR> <BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><header>
+        
+        <nav>
+            <ul>
+                
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#complaint">Pengaduan</a></li>
+                <li><a href="#social-media">Sosial Media</a></li>
+               
+            </ul>
+        </nav>
+    </header><br>
+
+
+
+    <section id="complaint">
+        <form method="post" autocomplete="off" name="google-sheet">
+            
+            <h1>AYOO CERITA!!!</h1><br>
+
+                   <b>Nama : </b>
+                   <td><input type="text" name="Nama"   required="" /></td>
+                  </tr><br>
+
+
+                <b>Pengaduan : </b>
+                  <td><input type="text" name="Pengaduan"   required="" /></td>
+                  </tr><br>
+                  
+                 
+               <input type="submit" name="submit" value="Submit"/>
+
+        </form>
+      
+        <script type="text/javascript">
+      
+      
+            const scriptURL = 'https://script.google.com/macros/s/AKfycbzPD3cynT3LenJtPeJJrhqOUbWSdRG3RIyR1B5uQ6Ka6U_xzgKDXHJY-_hCr6tLglnY/exec'
+                  const form = document.forms['google-sheet']
+                
+                  form.addEventListener('submit', e => {
+                    e.preventDefault()
+                    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                .then(response => alert("Kamu Keren Udah Berani Cerita."))
+                .catch(error => console.error('Error!', error.message))
+            })
+  </script>
+    </section><BR><BR>
+    
+
+    <section id="social-media">
+        <h1>Sosial Media</h1>
+        <p>Ikuti kami di platform sosial media berikut:</p>
+        <ul>
+            <li><a href="https://www.instagram.com/fanspalopo/?igsh=a3VxaXo5eWZ2dnVh">Instagram</a></li>
+        </ul>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 FANS 24 Page. All rights reserved.</p>
+    </footer>
+</body>
+</html>
